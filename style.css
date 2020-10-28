@@ -1,0 +1,99 @@
+     
+h1{color:cornsilk}
+h1{text-align: center }    /* cor dos textos e sombras*/
+h2{margin: 1 }
+h2{color: white}
+a{color: white}
+button{background-color: white;}
+h1{text-shadow: 0.1em 0.0em 0.07em black}
+body{ 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    transition-property: all;
+    background-image:url(fundos/fundo.jpg);
+    
+
+}
+.menu ul{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding-top: 10;  /* cor da barra das info*/
+    background-color: #212121;
+    box-shadow: 0px 2px 25px 0px rgba(255, 255, 255, 0.75);
+    
+    
+}
+.menu ul li{
+    
+    font-family: Arial, Helv
+    etica, sans-serif;
+    display: inLine; /* organizador das info*/
+}
+.menu ul li a{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    display: inLine-block;
+    padding: 20px 30px; /* ajuste do texto  + da barra*/
+    transition: all 0.1s linear;
+    text-decoration: none;
+    
+    
+
+}
+.menu ul li a:hover{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 60px; /* animaçao ao passar o mouse na barra*/
+    margin: 1;
+    transition: all 0.3s linear;
+    font-weight: bolder;
+    
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    animation: moveBanner 2s;
+    bottom: 0; /* barra de baixo*/
+    width: 100%;
+    background-color: black;
+    opacity: 70%;
+    color: white;
+    text-align: center;
+
+  }
+  @keyframes moveBanner{
+    0%{
+        transform: translateY(10rem) rotateY(-1deg);
+    } /* animação dela surgindo (Feito por StrollyTSG)*/
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+center a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background: #424242;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    font-size: 66%; /* Botão (Feito por StrollyTSG)*/
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 20px 60px;
+    opacity: 0;
+    animation: moveBanner 1s 0.5s forwards;
+}
+@keyframes moveBanner{
+    0%{
+        transform: translateY(10rem) rotateY(-30deg);
+    } /* animaçao do botao (Feito por StrollyTSG)*/
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+/* GIT HUB DO STROLLY TSG: https://github.com/StrollyTSG*/
